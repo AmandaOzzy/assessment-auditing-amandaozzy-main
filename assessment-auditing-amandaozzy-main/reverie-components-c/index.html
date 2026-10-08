@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reverie | Records &amp; Coffee – Portland, OR</title>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/author.css">
+</head>
+<body>
+  <main>
+    <!-- Booking -->
+    <section id="book" class="booking" aria-labelledby="book-heading">
+      <div class="inner-container">
+        <h2 id="book-heading">Book an Event</h2>
+        <p>
+          Interested in attending an upcoming event or enquiring about a private
+          booking? Fill in the form below and we will get back to you within
+          two business days.
+        </p>
+        <p>All fields are required.</p>
+        <form class="booking-form" action="#" method="post">
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+          </div>
+          <div>
+            <label>Your name</label>
+            <input type="text" id="full-name" name="full-name"
+                   autocomplete="name" required>
+          </div>
+          <div>
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email"
+                   autocomplete="email" required tabindex="1">
+          </div>
+          <div>
+            <select id="event-type" name="event-type">
+              <option value="">Select an event type</option>
+              <option value="live-music">Live Music Night</option>
+              <option value="paint-spin">Paint &amp; Spin Night</option>
+              <option value="latte-workshop">Latte Art Workshop</option>
+              <option value="private">Private Event Inquiry</option>
+            </select>
+          </div>
+          <div class="btn">Send Message</div>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-color-padding">
+    <div class="inner-container footer-inner">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 44"
+             width="210" height="44"
+             role="img" aria-label="Reverie Records and Coffee"
+             focusable="false">
+          <circle cx="22" cy="22" r="20" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="22" cy="22" r="13" fill="none" stroke="currentColor" stroke-width="1"/>
+          <circle cx="22" cy="22" r="7"  fill="none" stroke="currentColor" stroke-width="0.75"/>
+          <circle cx="22" cy="22" r="3"  fill="#d4a843"/>
+          <text x="52" y="30"
+                font-family="Georgia, 'Times New Roman', serif"
+                font-size="22" font-style="italic"
+                fill="currentColor" letter-spacing="0.5">Reverie</text>
+        </svg>
+        <p>Records &amp; Coffee since 2021. Portland, OR.</p>
+      </div>
+
+      <!-- Visit info - address and hours -->
+      <div class="visit">
+        <h2>Come Visit Us</h2>
+        <div class="contact-info">
+          2847 NE Alberta Street<br>
+          Portland, OR 97211
+          <p><a href="tel:+15035550182">(503) 555-0182</a></p>
+          <p><a href="mailto:hello@reveriepdx.com">hello@reveriepdx.com</a></p>
+        </div>
+        <!-- <dl> is correct for term/value pairs such as day-range and opening times (WCAG 1.3.1). -->
+        <dl class="hours-list">
+          <dt>Mon &ndash; Thu</dt>
+          <dd>8 am &ndash; 9 pm</dd>
+          <dt>Fri &ndash; Sat</dt>
+          <dd>8 am &ndash; 11 pm</dd>
+          <dt>Sun</dt>
+          <dd>9 am &ndash; 8 pm</dd>
+        </dl>
+      </div>
+
+      <!-- Footer nav distinguished from primary nav pointing to a visible heading (WCAG 1.3.1). -->
+      <nav class="footer-nav">
+        <h2 id="footer-nav-heading">Explore</h2>
+         <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#coffee">Coffee</a></li>
+          <li><a href="#records">Records</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#book">Book</a></li>
+        </ul>
+      </nav>
+      <!-- Each link has a unique aria-label naming the platform and the brand so screen-reader users know the destination (WCAG 2.4.4). SVGs are aria-hidden because the link label already covers the name. -->
+      <div class="footer-social">
+        <h2>Follow Us</h2>
+        <ul>
+
+          <li>
+            <a href="https://instagram.com" aria-label="Reverie on Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                   aria-hidden="true" focusable="false">
+                <rect x="2" y="2" width="20" height="20" rx="6"
+                      fill="none" stroke="currentColor" stroke-width="1.75"/>
+                <circle cx="12" cy="12" r="4.5"
+                        fill="none" stroke="currentColor" stroke-width="1.75"/>
+                <circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://facebook.com" aria-label="Reverie on Spotify">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                   aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="10"
+                        fill="none" stroke="currentColor" stroke-width="1.75"/>
+                <path d="M13 8.5h1.5V6.5H13A3 3 0 0 0 10 9.5V11H8.5v2.5H10V19h2.5v-5.5H14l.5-2.5h-2V9.5A1 1 0 0 1 13 8.5z"
+                      fill="currentColor"/>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://open.spotify.com" aria-label="Reverie on Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                   aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="10"
+                        fill="none" stroke="currentColor" stroke-width="1.75"/>
+                <path d="M7.5 14.5C9.5 13 14 13 16.5 14"
+                      fill="none" stroke="currentColor" stroke-width="1.75"
+                      stroke-linecap="round"/>
+                <path d="M7 11.5C9.5 9.5 15 9.5 17 11"
+                      fill="none" stroke="currentColor" stroke-width="1.75"
+                      stroke-linecap="round"/>
+                <path d="M8 8.5C10.5 7 15.5 7 17.5 8.5"
+                      fill="none" stroke="currentColor" stroke-width="1.75"
+                      stroke-linecap="round"/>
+              </svg>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-copyright inner-container">
+      <p>&copy; 2026 Reverie Records &amp; Coffee. All rights reserved.</p>
+      <p>This asssessment is for academic/educational purposes only. </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
